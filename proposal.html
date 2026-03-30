@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Request for Proposal Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 700px;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    .form-group {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .form-group label {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        resize: none;
+        height: 50px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+        display: block;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        margin-left: 150px;
+        padding: 8px 12px;
+        border: 1px solid #999;
+        background: #e6e6e6;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background: #d4d4d4;
+    }
+</style>
+</head>
+<body>
+
+<h1>How can we help?</h1>
+
+<div class="form-container">
+    <fieldset>
+        <legend>Request for Proposal</legend>
+
+        <div class="form-group">
+            <label>Your Company:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email">
+        </div>
+
+        <div class="form-group">
+            <label>Username:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password">
+        </div>
+
+        <div class="form-group">
+            <label>Your Business:</label>
+            <textarea placeholder="Type your comments"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Company Size:</label>
+        </div>
+        <div class="radio-group">
+            <label><input type="radio" name="size"> Less than 10</label>
+            <label><input type="radio" name="size"> 11 to 50</label>
+            <label><input type="radio" name="size"> 50 to 200</label>
+            <label><input type="radio" name="size"> Over 200</label>
+        </div>
+
+        <div class="form-group">
+            <label>Services:</label>
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Brand Identity</label>
+            <label><input type="checkbox"> New Website</label>
+            <label><input type="checkbox"> Web Designer</label>
+        </div>
+
+        <div class="form-group">
+            <label>Timeline:</label>
+            <select>
+                <option>Immediately</option>
+                <option>1-2 Weeks</option>
+                <option>1 Month</option>
+            </select>
+        </div>
+
+        <button class="submit-btn">Send to dev/design</button>
+
+    </fieldset>
+</div>
+
+</body>
+</html>
+baliw
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lists and Merging Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 600px;
+        margin-top: 10px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>UNORDERED and ORDERED LISTS</h1>
+
+<!-- Unordered List -->
+<ul>
+    <li>Item 1
+        <ul>
+            <li>Hello
+                <ol type="a">
+                    <li>hello</li>
+                    <li>Hi</li>
+                    <li>Goodbye
+                        <ul>
+                            <li>Sayonara</li>
+                            <li>Adios</li>
+                            <li>Paalam</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ul>
+    </li>
+
+    <li>Item 2
+        <ul>
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Ordered List -->
+<ol>
+    <li>Item 3
+        <ol start="5">
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ol>
+    </li>
+    <li>Item 4
+        <ol start="5">
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ol>
+    </li>
+</ol>
+
+<h2>Merging Table</h2>
+
+<table>
+    <tr>
+        <td rowspan="2">A</td>
+        <td>B</td>
+        <td>C</td>
+        <td rowspan="4">G</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>E</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>f</td>
+        <td>g</td>
+    </tr>
+    <tr>
+        <td colspan="3">h</td>
+    </tr>
+</table>
+
+</body>
+</html>

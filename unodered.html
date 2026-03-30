@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lists and Merging Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 600px;
+        margin-top: 10px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>UNORDERED and ORDERED LISTS</h1>
+
+<!-- Unordered List -->
+<ul>
+    <li>Item 1
+        <ul>
+            <li>Hello
+                <ol type="a">
+                    <li>hello</li>
+                    <li>Hi</li>
+                    <li>Goodbye
+                        <ul>
+                            <li>Sayonara</li>
+                            <li>Adios</li>
+                            <li>Paalam</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ul>
+    </li>
+
+    <li>Item 2
+        <ul>
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Ordered List -->
+<ol>
+    <li>Item 3
+        <ol start="5">
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ol>
+    </li>
+    <li>Item 4
+        <ol start="5">
+            <li>Hello</li>
+            <li>Hi</li>
+            <li>Goodbye</li>
+        </ol>
+    </li>
+</ol>
+
+<h2>Merging Table</h2>
+
+<table>
+    <tr>
+        <td rowspan="2">A</td>
+        <td>B</td>
+        <td>C</td>
+        <td rowspan="4">G</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>E</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>f</td>
+        <td>g</td>
+    </tr>
+    <tr>
+        <td colspan="3">h</td>
+    </tr>
+</table>
+
+</body>
+</html>
+Sent
+Write to De Guzman Xyea
