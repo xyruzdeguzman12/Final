@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info System</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background: #f4f7f6; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2, h4 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        form { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        input, select { padding: 10px; border: 1px solid #ddd; border-radius: 4px; flex: 1; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+        tr { background: #f8f9fa; }
+        .delete-btn { background: #dc3545; padding: 5px 10px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Information Site</h2>
+
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="email" id="email" placeholder="Student Number" required>
+            <select id="course">
+                <option value="BS Agricultural Economics">BS Agricultural Economics</option>
+                <option value="BS Agricultural Business">BS Agricultural Business</option>
+                <option value="BS Agroforestry">BS Agroforestry</option>
+                <option value="BS Forestry">BS Forestry</option>
+                <option value="BS Fisheries">BS Fisheries</option>
+                <option value="BS Information Technology">BS Information Technology</option>
+                <option value="BS Computer Engineering">BS Computer Engineering</option>
+                <option value="BS Civil Engineering">BS Civil Engineering</option>
+                <option value="BS Agricultural & Biosystems Engineering">BS Agricultural & Biosystems Engineering</option>
+                <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
+                <option value="Bachelor of Secondary Education">Bachelor of Secondary Education</option>
+                <option value="Bachelor of Physical Education">Bachelor of Physical Education</option>
+                <option value="Bachelor of Technology & Livelihood Education">Bachelor of Technology & Livelihood Education</option>
+                <option value="BS Biology">BS Biology</option>
+                <option value="BS Mathematics">BS Mathematics</option>
+                <option value="BS English Language Studies">BS English Language Studies</option>
+                <option value="BS Development Communication">BS Development Communication</option>
+                <option value="BS Entrepreneurship">BS Entrepreneurship</option>
+                <option value="BS Hospitality Management">BS Hospitality Management</option>
+                <option value="BS Food Technology">BS Food Technology</option>
+                <option value="BS Hotel & Restaurant Management">BS Hotel & Restaurant Management</option>
+                <option value="Doctor of Veterinary Medicine">Doctor of Veterinary Medicine</option>
+            </select>
+            <button onclick="gotopage()">Submit</button>
+        </form>
+
+        <script>
+            function gotopage() {
+                window.location.href = "home.html";
+            }
+        </script>
+    </div>
+</body>
+</html>
